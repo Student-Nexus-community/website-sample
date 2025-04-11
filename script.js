@@ -18,32 +18,7 @@ navLinks.querySelectorAll('a').forEach(link => {
   });
 });
 
-// Render Upcoming Events
-const eventsGrid = document.querySelector('.events-grid');
-const upcomingEvents = [
-  
-];
 
-upcomingEvents.forEach(event => {
-  eventsGrid.innerHTML += `
-    <div class="card">
-      <img src="${event.image}" alt="${event.name}" class="card-image" loading="lazy">
-      <div class="card-content">
-        <h3>${event.name}</h3>
-        <div class="event-details">
-          <p><i data-lucide="calendar"></i> ${event.date}</p>
-          <p><i data-lucide="clock"></i> ${event.time}</p>
-          <p><i data-lucide="map-pin"></i> ${event.location}</p>
-        </div>
-        <p>${event.description}</p>
-        <a href="${event.registerLink}" target="_blank" rel="noopener noreferrer">
-          <button class="cta-button">Register Now</button>
-        </a>
-      </div>
-    </div>
-  `;
-});
-lucide.createIcons();
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -84,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
           description: "A 24-hour hackathon where students built innovative solutions for social impact.",
       },
       {
-          name: "Data Mastery with Microsoft Power BI",
+          name: "Hack-N-Win | 24-Hour Hackathon",
           date: "January 5, 2025",
           time: "06:00 PM - 08:00 PM IST",
           location: "Microsoft Teams",
@@ -150,11 +125,14 @@ document.addEventListener("DOMContentLoaded", function () {
   galleryContainer.appendChild(track);
 
   const galleryImages = [
-    { url: "images/Screenshot 2024-11-14 213437.png", caption: "Leadership Workshop 2024" },
-    { url: "images/Screenshot 2024-11-17 193457.png", caption: "Tech Meetup" },
-    { url: "images/Screenshot 2024-11-18 001619.png", caption: "Student Networking Event" },
-    { url: "images/Screenshot-4.png", caption: "Coding Bootcamp" },
-    { url: "images/Screenshot 2024-11-18 001619.png", caption: "Coding Bootcamp" },
+    { url: "eventpics/hnw1.jpg", caption: "Hack-N-Win | 24-Hour Hackathon" },
+    { url: "eventpics/hnw2.jpg", caption: "Hack-N-Win | 24-Hour Hackathon" },
+    { url: "eventpics/hnw3.png", caption: "Hack-N-Win | 24-Hour Hackathon" },
+    { url: "eventpics/genai.png", caption: "GenAI 101" },
+    { url: "eventpics/genai2.png", caption: "GenAI 101" },
+    { url: "eventpics/genai3.png", caption: "GenAI 101" },
+    { url: "eventpics/github1.png", caption: "Mastering the GitHub Student Developer Pack" },
+    { url: "eventpics/github2.png", caption: "Mastering the GitHub Student Developer Pack" },
   ];
 
   // Add images to the track
@@ -185,28 +163,28 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener('DOMContentLoaded', function() {
   const testimonials = [
     {
-      name: "Alex Johnson",
-      role: "Computer Science Major",
-      quote: "Joining this community has been transformative. The support and resources available have accelerated my learning journey.",
-      avatar: "images/HARISH.REDDY.jpg"
+      name: "Ishika Rao",
+      role: "First-Year CSE Student",
+      quote: "Being a part of Student Nexus felt like finally finding a space where students truly support each other. I’ve learned more here than in any classroom.",
+      avatar: "team/founder.jpg"
     },
     {
-      name: "Samantha Lee",
-      role: "Graphic Design Student",
-      quote: "I've found my tribe here. The collaborative projects and workshops have helped me grow both personally and professionally.",
-      avatar: "images/HARISH.REDDY.jpg"
+      name: "Aditya Sharma",
+      role: "Second-Year Data Science Student",
+      quote: "The peer-led sessions and project collaborations at Student Nexus helped me explore my interests and improve my coding skills.",
+      avatar: "team/founder.jpg"
     },
     {
-      name: "Michael Chen",
-      role: "Business Administration",
-      quote: "The networking opportunities are unparalleled. I've made connections that I'm sure will last throughout my career.",
-      avatar: "images/HARISH.REDDY.jpg"
+      name: "Meera Joshi",
+      role: "Electronics & Communication Student",
+      quote: "I never thought a tech community could be this welcoming. From hackathons to weekly meetups, every moment at Student Nexus has been a vibe!",
+      avatar: "team/founder.jpg"
     },
     {
-      name: "Emily Rodriguez",
-      role: "Environmental Science",
-      quote: "The passion for sustainability in this community is inspiring. I've learned so much about making a real impact.",
-      avatar: "images/HARISH.REDDY.jpg"
+      name: "Rohan Nair",
+      role: "Final-Year Mechanical Student",
+      quote: "Even as a non-CS student, I felt included. Student Nexus encourages all students to explore tech and innovation, regardless of background.",
+      avatar: "team/founder.jpg"
     }
   ];
 
@@ -317,29 +295,29 @@ const coreTeamGrid = document.querySelector(".core-team-grid");
 const coreTeam = [
   {
     name: "Devi Sri Dubakula",
-    role: "Tech Lead",
+    role: "Event Manager",
     image: "team/devisree.jpeg",
     linkedin: "https://www.linkedin.com/in/devi-sri-dubakula-1398412a6/",
-    email: "mailto:alice@example.com",
+    email: "mailto:devisrigoud013@gmail.com",
   },
   {
     name: "Chakradeep",
-    role: "Marketing Head",
+    role: "Operations Lead",
     image: "team/chakradeep.jpeg",
     linkedin: "https://www.linkedin.com/in/akonkar-chakradeep/",
     email: "mailto:Pradeepakonkar@gmail.com",
   },
   {
     name: "Vamsi Adithya",
-    role: "Operations Manager",
+    role: "Nexus Ambassador Lead",
     image: "team/vamsi.jpeg",
     linkedin: "https://www.linkedin.com/in/vamsi-adithya/",
     email: "mailto:vamsiadithyanarukulla@gmail.com",
   },
   {
     name: "Swami",
-    role: "Finance Lead",
-    image: "team/swami.jpeg",
+    role: "E Sports lead",
+    image: "team/swami.jpg",
     linkedin: "https://www.linkedin.com/in/laxmi-narasimhaswami-borra/",
     email: "mailto:borralaxminarasimhaswami9@gmail.com",
   }
@@ -442,10 +420,11 @@ document.addEventListener('DOMContentLoaded', function () {
       { name: 'Partner 2', logo: 'images/commudle.png' },
       { name: 'Partner 3', logo: 'images/piecesfordevelopers.png' },
       { name: 'Partner 4', logo: 'images/s n student nexus.png' },
+      { name: 'Partner 1', logo: 'images/mrcechapter.png' },
       { name: 'Partner 5', logo: 'images/d4community.png' },
       { name: 'Partner 6', logo: 'images/mrceiiic.png' },
       { name: 'Partner 7', logo: 'images/mrce.jpg' },
-      { name: 'Partner 7', logo: 'images/innovista.jpeg' },
+      { name: 'Partner 7', logo: 'images/innovista.jpg' },
 
 
   ];
